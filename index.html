@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/all.min.css">
+
+    <title>Document</title>
+</head>
+<body>
+<div class="container-fluid">
+  <div class="container">
+    <!--Search start-->
+    <div class="my-5 row">
+      <div class="col">
+        <div>
+        <input type="text"  class="form-control w-75 m-auto" id="getMovie" placeholder="get movies by word..." style="background-color: #000"/>
+        </div>
+      </div>
+
+    </div>
+   <!--Search end-->
+
+    <!--display movies start-->
+    <div>
+      <div class="row" id="display-movies">
+      
+      </div>
+  
+      <!--display movies start-->
+      <h2>Now Playing</h2>
+      <div class="row" id="display-now-playing">
+      
+      </div>
+
+      <h2>Popular</h2>
+      <div class="row" id="popular">
+      
+      </div>
+
+      <h2>Top Rated</h2>
+      <div class="row" id="display-top-rated">
+      
+      </div>
+
+      <h2>Trinding</h2>
+      <div class="row" id="display-trending">
+      
+      </div>
+    </div>
+
+    <!--fixed menu start-->
+    <div class="row sidebar">
+      <div class="left-side">
+        <nav>
+          <ul>
+            <li class="text-capitalize mt-5 mb-3">
+              <a href="#display-now-playing">now playing</a>
+            </li>
+            <li class="text-capitalize my-3">
+              <a href="#popular">popular</a>
+            </li>
+            <li class="text-capitalize my-3">
+              <a href="#display-top-rated">top rated</a>
+            </li>
+            <li class="text-capitalize my-3">
+              <a href="#display-trending">trending</a>
+            </li>
+            <li class="text-capitalize my-3">
+              <a href="#upcoming">upcoming</a>
+            </li>
+            <li class="text-capitalize my-3">
+              <a href="#contactUs">contact us</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="icons text-center my-5">
+          <i class="fab fa-facebook-f my-5 mx-2"></i>
+          <i class="fab fa-twitter my-5 mx-2"></i>
+          <i class="fas fa-globe my-5 mx-2"></i>
+          <p class="copy-rights text-left m-3">Copyright Â© 2019 All Rights Reserved.</p>
+        </div>
+      </div>
+      <div class="right-side">
+        <div><img  class="mt-4" src="./images/logo.png" alt="logo"></div>
+      
+        <div class="toggle-icon text-center">
+          <i class="fas fa-bars"></i>
+        </div>
+        <div class="my-5 mx-auto">
+          <i class="fas fa-globe d-block my-3"></i>
+          <i class="fas fa-share-alt d-block"></i>
+        </div>
+
+      </div>
+    </div>
+    <!--fixed menu end-->
+
+    <!-- contact us -->
+
+    <div>
+      <h2 class="">ContacUs</h2>
+    </div>
+    <div class="my-5 row">
+      <div class="col-md-6 my-2">
+        <div>
+        <input type="text"  class="form-control w-75 m-auto" id="name" placeholder="Enter Your Name..." style="background-color: #000"/>
+        </div>
+        <div class="alert alert-danger w-75 m-auto d-none" id="nameAlert" role="alert">
+          <strong>Your name is not valid</strong>
+        </div>
+      </div>
+      <div class="col-md-6 my-2">
+        <div>
+          <input type="email" class="form-control w-75 m-auto" id="email" placeholder="Enter Your Email"  style="background-color: #000" />
+        </div>
+        <div class="alert alert-danger w-75 m-auto d-none" id="emailAlert" role="alert">
+          <strong>enter valid email</strong>
+        </div>
+      </div>
+      <div class="col-md-6 my-2">
+        <div>
+          <input type="number" class="form-control w-75 m-auto" id="phone" placeholder="Enter Phone"  style="background-color: #000" />
+        </div>
+        <div class="alert alert-danger w-75 m-auto d-none" id="phoneAlert" role="alert">
+          <strong>enter valid phone</strong>
+        </div>
+      </div>
+      <div class="col-md-6 my-2">
+        <div>
+          <input type="number" class="form-control w-75 m-auto" id="age" placeholder="Enter Age" style="background-color: #000" />
+        </div>
+        <div class="alert alert-danger  w-75 m-auto d-none" id="ageAlert" role="alert">
+          <strong>enter valid Age</strong>
+        </div>
+      </div>
+      <div class="col-md-6 my-2">
+        <div>
+          <input type="password" class="form-control w-75 m-auto" id="password" placeholder="Enter Password"  style="background-color: #000" />
+        </div>
+        <div class="alert alert-danger w-75 m-auto d-none" id="passwordAlert" role="alert">
+          <strong>entre valid password *Minimum eight characters, at least one letter and one number:*</strong>
+        </div>
+        
+      </div>
+      <div class="col-md-6 my-2">
+        <div>
+          <input type="password" class="form-control w-75 m-auto" id="rePassword" placeholder="Enter RePassword"  style="background-color: #000" />
+        </div>
+        <div class="alert alert-danger w-75 m-auto d-none" id="repasswordAlert" role="alert">
+          <strong>entre valid Repassword</strong>
+        </div>
+        
+      </div>
+    </div>
+    <button class="btn btn-outline-danger " id="submitBtn">Submit</button>
+
+
+</div>
+</div>
+<script src="js/popper.js"></script>
+<script src="js/jquery-3.5.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/plugin.js"></script>
+</body>
+</html>
